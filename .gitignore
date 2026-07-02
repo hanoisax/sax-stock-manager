@@ -22,3 +22,6 @@ npm-debug.log*
 
 # clasp local auth (nếu có)
 .clasprc.json
+
+# Local Netlify folder
+.netlify
