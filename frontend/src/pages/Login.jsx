@@ -3,7 +3,7 @@ import { useAuth } from '../lib/auth';
 import { LogIn, AlertCircle } from 'lucide-react';
 
 // Cho phép đăng nhập bằng tên đăng nhập ngắn (vd "admin"); tự ghép domain.
-const LOGIN_DOMAIN = 'hanoisax.com';
+const LOGIN_DOMAIN = 'gmail.com';
 const toEmail = (u) => {
   const s = (u || '').trim();
   return s.includes('@') ? s : `${s}@${LOGIN_DOMAIN}`;
@@ -40,7 +40,7 @@ export default function Login() {
 
         <div>
           <label className="label">Tên đăng nhập</label>
-          <input className="input" type="text" autoComplete="username" placeholder="admin"
+          <input className="input" type="text" autoComplete="username" placeholder="hanoisax"
             value={username} onChange={e => setUsername(e.target.value)} required />
         </div>
         <div>
