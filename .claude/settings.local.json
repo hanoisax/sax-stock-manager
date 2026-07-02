@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude_ai_Google_Drive__read_file_content",
+      "mcp__claude_ai_Google_Drive__search_files",
+      "PowerShell(Set-Location \"d:\\\\Dunghd\\\\code\\\\AI\\\\sax-stock-manager\"; clasp -A \"$env:USERPROFILE\\\\.clasprc-hanoisax.json\" deployments 2>&1)",
+      "PowerShell($url = \"https://script.google.com/macros/s/AKfycbylJLU3p-75DLkeGSkAVRiJd1uLh38xW9W2KVFeMN_D/exec?action=getDropdowns\"; $response = Invoke-WebRequest -Uri $url -UseBasicParsing -MaximumRedirection 10; $response.StatusCode; $response.Content.Substring\\(0, [Math]::Min\\(500, $response.Content.Length\\)\\))",
+      "PowerShell($url = \"https://script.google.com/macros/s/AKfycbzCZPBquj-6A3MvArMSg4H8IDdDgM0oYZyarvf3_0Ih_53rg17vlbbqbLxefcGEbkotwg/exec?action=getDropdowns\"; $response = Invoke-WebRequest -Uri $url -UseBasicParsing -MaximumRedirection 10; $response.StatusCode; $response.Content)",
+      "PowerShell(Set-Location \"d:\\\\Dunghd\\\\code\\\\AI\\\\sax-stock-manager\"; clasp -A \"$env:USERPROFILE\\\\.clasprc-hanoisax.json\" push --force 2>&1)",
+      "PowerShell(Set-Location \"d:\\\\Dunghd\\\\code\\\\AI\\\\sax-stock-manager\"; clasp -A \"$env:USERPROFILE\\\\.clasprc-hanoisax.json\" deploy --description \"v2 - add listSheets diagnostic\" 2>&1)",
+      "PowerShell(Set-Location \"d:\\\\Dunghd\\\\code\\\\AI\\\\sax-stock-manager\"; clasp -A \"$env:USERPROFILE\\\\.clasprc-hanoisax.json\" push --force 2>&1; clasp -A \"$env:USERPROFILE\\\\.clasprc-hanoisax.json\" deploy --description \"v3 - headers diagnostic\" 2>&1)",
+      "PowerShell(Set-Location \"d:\\\\Dunghd\\\\code\\\\AI\\\\sax-stock-manager\"; clasp -A \"$env:USERPROFILE\\\\.clasprc-hanoisax.json\" push --force 2>&1; clasp -A \"$env:USERPROFILE\\\\.clasprc-hanoisax.json\" deploy --description \"v5 - rewrite for actual schema\" 2>&1)",
+      "Bash(npx playwright *)",
+      "Bash(netlify --version)",
+      "Bash(npm run *)",
+      "Bash(netlify sites:create --name hanoisax)",
+      "Bash(netlify deploy *)",
+      "Bash(clasp deploy *)",
+      "Bash(clasp push *)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}
